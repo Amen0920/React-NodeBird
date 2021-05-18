@@ -1,8 +1,12 @@
 import React from 'react';
+import AppLayout from '../components/AppLayout';
 
 const Signup = () => {
     return (
-        <div>Register Page</div>
+        <AppLayout>
+            <div>Register Page</div>
+        </AppLayout>
+        
     )
 }
 
