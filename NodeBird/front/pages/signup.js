@@ -17,17 +17,17 @@ const Signup = () => {
 
     const [passwordCheck, setPasswordCheck] = useState('');
     const [passwordError, setPasswordError] = useState(false);
-    const onChangePasswordCheck = useCallback(() => {
+    const onChangePasswordCheck = useCallback((e) => {
         setPasswordCheck(e.target.value);
         setPasswordError(e.target.value !== password);
-    },[]);
+    },[password]);
 
     const [term, setTerm] = useState('');
     const [termError, setTermError] = useState(false);
-    const onChangeTerm = useCallback(() => {
+    const onChangeTerm = useCallback((e) => {
         setTerm(e.target.checked);
         setTermError(false);
-    },[]);
+    },[term]);
 
     
     const onSubmit = useCallback(() => {
